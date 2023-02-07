@@ -15,7 +15,7 @@ namespace Factorial
             List<float> numbers = new List<float>();
             for (ulong i = 0; i < num_ammount; i++)
             {
-                numbers.Add((float)gen.NextDouble() % 20);
+                numbers.Add(gen.Next(20));
             }
             for (int i = 0; i < numbers.Count; i++)
             {
