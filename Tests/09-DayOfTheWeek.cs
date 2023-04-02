@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Tests
+namespace DayOfTheWeek.Tests
 {
     [TestClass]
     public class DayOfTheWeek_Tests
@@ -12,7 +12,7 @@ namespace Tests
         public void DayOfTheWeek_Test()
         {
             //Arrange
-            DateTime time = DateTime.MinValue.AddDays(Utils.random.Next(9999 * 365));
+            DateTime time = DateTime.Now;
             int result = 0;
             int resultOK = (int)time.DayOfWeek;
             //Act
